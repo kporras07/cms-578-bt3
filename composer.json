@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^3.1",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/seckit": "^2.0",
         "drush-ops/behat-drush-endpoint": "^9.4",
         "drush/drush": "^10",
         "pantheon-systems/drupal-integrations": "^9",
