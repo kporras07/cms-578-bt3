@@ -181,6 +181,8 @@ jobs:
           eval `ssh-agent -s`
           ssh-add ../private.key
           source $BASH_ENV
+          terminus self:plugin:uninstall terminus-secrets-plugin
+          terminus self:plugin:install pantheon-systems/terminus-secrets-plugin:1.x-dev
           ./.ci/deploy/pantheon/dev-multidev
 
   behat_test:
