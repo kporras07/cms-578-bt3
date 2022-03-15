@@ -1,7 +1,7 @@
 name: Schedule update check
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '10 21 * * *'
 defaults:
   run:
     shell: bash
@@ -28,7 +28,7 @@ env:
 jobs:
   scheduled_update_check:
     container:
-      image: quay.io/pantheon-public/build-tools-ci:6.x
+      image: quay.io/pantheon-public/build-tools-ci:8.x-php7.4
       options: --user root
     runs-on: ubuntu-latest
     steps:
